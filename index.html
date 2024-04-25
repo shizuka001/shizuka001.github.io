@@ -1,433 +1,519 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Paradigm Shift by HTML5 UP</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-	<style>
-		.tab-box {
-			background-color: #609EA2;
-			font-size: 20px;
-			position: fixed;
-			width: 100%;
-			opacity: 1;
-			font-weight: 600;
-			z-index: 1;
-		}
-
-		.tab-style {
-			margin-left: 25px;
-			color: #F0EEED;
-			cursor: pointer;
-		}
-
-		.tab-style:hover {
-			/* color: #393646; */
-			text-shadow: 2px 2px 5px #393646;
-			/* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); */
-		}
-
-		.doceree-logo {
-			height: 55px;
-		}
-
-		.my-name {
-			font-weight: 600;
-			text-align: center;
-			color: #db247d;
-			font-size: 20px;
-			margin-bottom: 0px;
-		}
-
-		.graduation {
-			font-weight: 600;
-			text-align: center;
-			color: #db247d;
-			font-size: 30px;
-			margin-bottom: 0px;
-		}
-
-		.pronouns {
-			font-size: 15px;
-			text-align: center;
-		}
-
-		.tab-active {
-			color: #413543;
-		}
-
-		.tab-inactive {
-			color: #F0EEED;
-		}
-
-		.dropdown {
-			display: inline-block;
-			margin-left: 20%;
-			font-weight: 600;
-		}
-
-		.drpdwn {
-			color: #F0EEED;
-			background-color: #609EA2;
-			border-width: 0px;
-			text-align: end;
-			font-weight: 600;
-		}
-
-		.drpdwn:hover {
-			/* color: #393646; */
-			text-shadow: 2px 2px 5px #393646;
-		}
-
-
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: #f9f9f9;
-			min-width: 160px;
-			z-index: 2;
-			border: 2px solid #f9f9f9;
-
-			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-			/* Add border styles here */
-		}
-
-		.dropdown-content a {
-			color: #F0EEED;
-			padding: 12px 16px;
-			text-decoration: none;
-			display: block;
-			background-color: #609EA2;
-			border-bottom: 2px solid #ccc;
-		}
-
-		.college-address-text {
-			font-weight: 500;
-			font-size: 11px;
-		}
-
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-
-		.dropdown-content a:hover {
-			/* color: #393646; */
-			text-shadow: 2px 2px 5px #393646;
-			background-color: #B9EDDD;
-		}
-
-		.img-style {
-			height: 100%;
-			text-align: center;
-		}
-
-		.college-name-text {
-			font-weight: 500;
-			font-size: 20px;
-			margin-bottom: 0px;
-		}
-
-		.intro-text {
-			/* background-color: white; */
-			/* margin: 20px; */
-			/* width: 40%; */
-			margin-left: 100px
-		}
-
-		.content-top-padding {
-			padding-top: 90px;
-			color: #413543;
-		}
-
-		.doceree-text {
-			font-size: 40px;
-			font-weight: 600;
-			margin-left: 8px;
-			margin-bottom: 0px;
-		}
-
-		li {
-			margin-bottom: 5px;
-		}
-	</style>
-
-	<script>
-		var tabs = {
-		}
-		var content = {}
-
-		document.addEventListener('DOMContentLoaded', function () {
-			// Your function to be initiated after HTML rendering
-			var tabList = ['introTab', 'academicsTab', 'careerTab', 'goalsTab'];
-			var contentList = ['introContent', 'academicsContent', 'careerConent', 'goalsContent'];
-
-
-
-			for (let tab of tabList) {
-				tabs[tab] = document.getElementById(tab);
-			}
-
-			for (let item of contentList) {
-				content[item] = document.getElementById(item);
-			}
-
-			for (let tab of tabList) {
-				tabs[tab].addEventListener('click', () => {
-
-					for (let item of tabList) {
-						item !== tab ? tabs[item].classList.remove('tab-active') : tabs[tab].classList.add('tab-active');
-
-					}
-					const tabname = tab.slice(0, 5);
-					for (let item of contentList) {
-						console.log(item, tabname)
-						item.includes(tabname) ? content[item].setAttribute('style', 'display: block') : content[item].setAttribute('style', 'display: none')
-					}
-				})
-			}
-		});
-	</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="sakshi singh, portfolio, sakshi, front end dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description" content="Welcome to Sakshi's Portfolio. Front-End Web Developer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">]
+  <title>Portfolio | Sakshi Singh</title>
 </head>
 
-<body class="">
-	<div class="d-flex flex-row justify-content-center py-3 tab-box">
+  <body oncontextmenu="return false">
 
-		<p id="introTab" class="tab-style tab-active">Introduction</p>
-		<p id="academicsTab" class="tab-style">Academics</p>
-		<p id="careerTab" class="tab-style">Career</p>
-		<p id="goalsTab" class="tab-style">Goals & Intrests</p>
-		<!-- <p id="interestsTab" class="tab-style">Interests</p> -->
-		<!-- <p id="contactsTab" class="tab-style">Contacts</p> -->
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo"><i class="fab fa-node-js"></i> Sakshi Singh</a>
 
-		<!-- <div class="dropdown">
-			<button class="drpdwn">Color Palette</button>
-			<div class="dropdown-content">
-				<a href="#">Option 1</a>
-				<a href="#">Option 2</a>
-				<a href="#">Option 3</a>
-			</div>
-		</div> -->
-
-	</div>
-
-	<div class="mx-5 content-top-padding">
-		<div id="introContent">
-			<!-- <h2 style="text-align: center;" class="">Introduction</h2> -->
-			<div class="d-flex flex-row">
-				<div class="col-3 d-flex flex-column justify-content-start">
-					<img src="../images/sakshi.jpg" class="img-style pt-3">
-					<div class="d-flex flex-column justify-content-center">
-						<p class="my-name">Sakshi Singh</p>
-						<!-- <p class="pronouns">(She/Her)</p> -->
-					</div>
-
-				</div>
-				<div class="intro-text col-7 d-flex flex-column justify-content-center mx-3">
-
-					Hello,<br>I am highly dedicated and hardworking person who thrives on challenges and has a passion
-					for
-					building
-					innovative solutions.<br><br>
-					With a strong work ethic and a collaborative mindset, I excel in team environments, where my team
-					can
-					leverage
-					my skills to create new and
-					impactful projects.
-					<br><br>
-					I always embrace the opportunity to learn and grow, constantly seeking out new technologies and
-					methodologies to enhance my problem-solving capabilities.<br><br>
-					With a track record of delivering exceptional results, I am poised to tackle complex projects and
-					drive
-					meaningful change in the ever-evolving landscape of programming and technology.
-					<div class="d-flex flex-row justify-content-between" style="margin-top: 10px;">
-
-					<div>
-						<p style="text-align: start;" class="my-name">Email ID:</p>
-						<p><span>Personal E-Mail Address:</span> <a href="mailto: sakshigkp97@gmail.com">sakshigkp97@gmail.com</a><br>
-							<span>College E-Mail Address:</span> <a href="mailto: ss42512n@pace.edu">ss42512n@pace.edu</a>
-						</p>
-						<p><span style="text-align: start;" class="my-name">Contact Number:</span>
-							(201)-234-7418</p>
-					</div>
-					<div>
-						<p style="text-align: start;" class="my-name">Address</p>
-						<p>2nd FL, 1206 7th Street<br>
-							North Bergen, NJ<br>
-							Pin Code: 07047<br></p>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="academicsContent" style="display: none;">
-			<div class="d-flex flex-row justify-content-between">
-
-				<div style="margin-left: 10vw;">
-					<p style="font-size: 25px; font-weight: 500; text-align: center; margin-bottom: 0px;">Under
-						Graduation</p>
-					<p style="font-size: 16px; text-align: center; font-weight: 500; color: #db247d;">(Aug 2016 - Feb
-						2021)</p>
-					<hr style="height: 2px; background-color: #413543;">
-					<div class="d-flex flex-row">
-						<img src="../images/ramaiah_logo.png" style="height: 50px;">
-						<div class="mx-2">
-							<p class="college-name-text">Ramaiah University of Applied Sciences</p>
-							<p class="college-address-text">Bengaluru, Karnataka, Peenya Industrial Area, India, 560058
-							</p>
-						</div>
-					</div>
-
-					<hr style="height: 2px; background-color: #413543;">
-
-					<p> <span style="font-weight: 700;">Course: </span>Bachelor of Technology in Computer Science
-						Engineering</p>
-					<p><span style="font-weight: 700;">GPA: </span>6.5/10</p>
-					<p style="font-weight: 700;">Projects</p>
-					<p>E-Governance Mobile Application(Jan 2019 - May 2019)</p>
-					<p>Examination Portal(Feb 2020 - Aug 2020)</p>
-
-				</div>
-
-				<hr style="height: auto; background-color: #413543; width: 2px;">
-
-				<div style="margin-right: 10vw;">
-					<p style="font-size: 25px; font-weight: 500; text-align: center; margin-bottom: 0px;">Graduation</p>
-					<p style="font-size: 16px; text-align: center; font-weight: 500; color: #db247d;">(Jan 2023 -
-						Present)</p>
-					<hr style="height: 2px; background-color: #413543;">
-					<div class="d-flex flex-row">
-						<img src="../images/paceLogo.png" style="height: 50px;">
-						<div class="mx-2">
-							<p class="college-name-text">Pace University</p>
-							<p class="college-address-text">One Place Plaze, NY, New York, USA, 10038</p>
-						</div>
-					</div>
-					<hr style="height: 2px; background-color: #413543;">
-					<p><span style="font-weight: 700;">Course: </span> Master of Science in Computer Science</p>
-					<p style="font-weight: 700;">Grades</p>
-					<p>Semester 1: A+</p>
-					<p>Semester 2: A+</p>
-				</div>
-			</div>
-
-			<hr style="height: 2px; background-color: #413543;">
-
-			<div>
-
-			</div>
-		</div>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
 
 
-		<div id="careerConent" style="display: none;">
-			<div style="text-align: center;">
-				<div class="d-flex flex-row justify-content-center">
-					<img src="../images/doceree.png" class="doceree-logo">
-					<p class="doceree-text">Doceree</p>
-				</div>
-				<p style="font-weight: 500; font-size: 11px;">Kalkaji, New Delhi, India, 560058<br><span
-						style="font-size: 20px;">Front-End Developer (<span style="font-size: 15px;">July 2021 - Nov
-							2022</span>)</span></p>
-				<!-- <p></p> -->
-			</div>
-			<hr style="height: 2px; background-color: #413543;">
-			<p style="text-align: start;" class="my-name">Roles & Responsibilities</p>
-			<ul>
-				<li>
-					Developing the application in Angular Framwork.
-				</li>
-				<li>
-					Testing and Debugging the application to identify and fix the bugs.
-				</li>
-				<li>
-					Always stay updated with tha latest trends, tools and frameworks.
-				</li>
-				<li>
-					Collaboration with the back-end developers and UI/UX designers to develop the application.
-				</li>
-			</ul>
-			<p style="text-align: start;" class="my-name">Projects</p>
-			<ul>
-				<li>I addressed the existing in the application bugs to improve it's reliability.
-				</li>
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h2>Hi There,<br /> I'm Sakshi <span>Singh</span></h2>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/sakshi-singhh97/"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/shizuka001" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/itzz_sakshi_singh/"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/blueBG.jpeg" alt="">
+    </div>
+    <div class="image image-small">
+      <img draggable="false" class="tilt" src="./assets/images/yellowBG.jpeg" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
 
 
-				<li>
-					Integrated new campaign type, "WhatsApp Campaign" along with the creating Targeted Audience, sending
-					WhatsApp Messages and
-					campaign Analytics.
-				</li>
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Sakshi</h3>
+        <span class="tag">Front End Developer</span>
+
+        <p>I am a prospective Web Developer pursuing a Master's in Computer Science at Pace University, specializing in
+          Front-End
+          Development, where I have demonstrated proficiency and a keen eye for creating engaging user interfaces.
+          During my tenure I collaborated effectively with cross-functional teams to deliver projects on time and
+          contributed to enhancing user experience through logical optimizations and aesthetic enhancements. I am fast
+          learner and ready to span my horizon in tech industry.</p>
+
+        <div class="box-container">
+          <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+          <div class="box">
+            <p><span> email : </span> sakshigkp97@@gmail.com</p>
+            <p><span> place : </span> North Bergen, New Jersey, USA - 07047</p>
+          </div>
+        </div>
+
+        <div class="resumebtn">
+          <a href="https://drive.google.com/file/d/1kVkXcfMwow-yGLijGTXKofOXtLvC0soQ/view?usp=sharing" target="_blank"
+            class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+
+          <a href="https://drive.google.com/file/d/130EuLSI4z4C4HuHlsRQSU2o6gk7O-Eux/view?usp=sharing" target="_blank"
+            class="btn"><span>Cover Letter</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
 
 
-				<li>I worked on redesigning and improving the publisher dashboard within the application.
-				</li>
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
 
-				<li>
-					I also integrated Highcharts throughout the application from dashboard to analytics.
-				</li>
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
 
-			</ul>
-		</div>
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
-		<div id="goalsContent" style="display: none;">
-			<p style="text-align: start;" class="my-name">Goals</p>
-			<ul>
-				<li>Striving to deepen expertise in popular frontend frameworks such as React, Vue, or Angular to build
-					scalable and efficient web applications.
-				</li>
+    <div class="container">
+      <h2>Programming Languages</h2>
+      <div class="row" id="skillsContainer">
 
-				<li>
-					Aspiring to collaborate closely with designers, backend developers, and other stakeholders to create
-					cohesive and integrated solutions.
-				</li>
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/js.svg" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/python.svg" />
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/java.svg" />
+            <span>Java</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/html5.svg" />
+            <span>HTML</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/css3.svg" />
+            <span>CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Databases</h2>
+      <div class="row" id="skillsContainer">
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/database-solid.svg" />
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/database-solid.svg" />
+            <span>MongoDB</span>
+          </div>
+        </div>
 
 
-				<li>Goal-oriented towards optimizing website performance, implementing best practices, and minimizing
-					load times for enhanced user experience.
-				</li>
+      </div>
+    </div>
 
-				<li>
-					Aiming to contribute to the frontend development community by actively participating in open-source
-					projects and sharing knowledge with the community.
-				</li>
+    <div class="container">
+      <h2>Software/Tools</h2>
+      <div class="row" id="skillsContainer">
 
-			</ul>
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/angular.svg" />
+            <span>Angular</span>
+          </div>
+        </div>
 
-			<p style="text-align: start;" class="my-name">Intrests </p>
-			<ul>
-				<li> Enthusiastic about creating seamless and intuitive user interfaces that enhance overall user
-					satisfaction.
-				</li>
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/react.svg" />
+            <span>React</span>
+          </div>
+        </div>
 
-				<li>
-					Passionate about developing websites that provide a consistent and optimal user experience across
-					various devices and screen sizes.
-				</li>
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/github.svg" />
+            <span>GitHub</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/jira.svg" />
+            <span>Jira</span>
+          </div>
+        </div>
 
 
-				<li>Committed to ensuring websites are accessible to users of all abilities, focusing on inclusive
-					design practices.
-				</li>
+      </div>
+    </div>
+  </section>
+  <!-- skills section ends -->
 
-				<li>
-					Keen interest in staying abreast of the latest frontend technologies and tools to implement
-					cutting-edge solutions.
-				</li>
 
-			</ul>
-		</div>
+  <!-- education section starts -->
+  <section class="education" id="education">
 
-		<div id="contactsContent" style="display: none;">
-			
-	</div>
-	</div>
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/Pace University.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Masters in Computer Science</h3>
+          <p>Pace University | New York, USA</p>
+          <h4>2023 | Pursuing</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/ramaiah college.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelors in Computer Science Engineering</h3>
+          <p>Ramaiah University of Applied Sciences | Bangalore, India</p>
+          <h4>2016 - 2021 | Completed</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- education section ends -->
+
+
+  <!-- work project section starts -->
+  <section class="work" id="work">
+
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Work <span>Experience</span></h2>
+
+    <div class="box-container">
+      <div class="box box1">
+        <div class="image py-3">
+          <img draggable="false" src="./assets/images/skills/Doceree.png" alt="">
+        </div>
+      </div>
+      <!-- <div class="box"> -->
+      <div class="box">
+
+        <div class="content">
+          <h3>Intern | Software Engineer</h3>
+          <h4>July 2021 - Oct 2021</h4>
+          <ul>
+            <li>Mastered the concepts of Angular framework and Angular Material library.</li>
+            <li>Developed the PDF Download feature, enabling users to generate downloadable reports containing graphs
+              and data
+              from advertisement analytics.</li>
+            <li>Improved reliability and performance by 20% in the application through fixing pre-existing bugs and code
+              refactoring,
+              resulting in enhanced stability, faster load times, and a smoother user experience.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+
+        <div class="content">
+          <h3>Front-End Developer</h3>
+          <h4>Oct 2021 - Nov 2022</h4>
+          <ul>
+            <li>Utilized Agile development methodologies with Jira and GitHub, enabling iterative development cycles,
+              transparent task
+              tracking and efficient team collaboration, ensuring timely delivery of high-quality software products</li>
+            <li>Collaborated with backend developers for Restful API integration, UI/UX developers for design
+              implementation, and
+              coordinated with the design team and project manager to ensure seamless execution of the project.</li>
+            <li>Integrated WhatsApp campaign, enabling WhatsApp message composition, audience creating and analytics
+              tracking for
+              efficient communication strategies within the application.</li>
+            <li>Replaced Google Charts with HighCharts and revamped the publisher dashboard for improved data
+              visualization and user
+              interface coherence across the application.</li>
+            <li>Implemented the entire in-house management portal, emphasizing efficient data display and management, to
+              streamline
+              access and decision-making processes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div> -->
+
+  </section>
+  <!-- work project section ends -->
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects </h2>
+    <div class="timeline">
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>E-Governance Mobile Application<span> (Dec 2019)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>This mobile app acts as a one-stop guide, simplifying complex government procedures into easy-to-follow steps.</li>
+              <li>Visual Studio Code's extensive library of extensions, plugins and mySQL is used at the backend. </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Online Examination Protal<span> (Aug 2020)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>The Examination Portal facilitates online exams where teachers upload questions and students can take exams remotely.</li>
+              <li>Developed using the ReactJS framework for the frontend and MySQL for the backend database.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>NxtWave | CCBP Intesive Course Certificate<span> (May 2021)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>This course imparts comprehensive knowledge of the MERN stack, covering MongoDB, Express.js, React, and Node.js, enabling me to build full-stack web applications proficiently.
+              </li>
+              <li>Alongside MERN, I also delve into Python programing language and database management using PostgreSQL.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>School Management Application<span> (May 2023)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>
+                The application offers streamlined administrative tasks such as student enrollment, grade recording, and communication.
+              </li>
+              <li>: Developed with JavaScript, HTML, and CSS, the frontend, while MySQL and Python power the backend for robust data handling and processing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Voice Assistant<span> (Dec 2023)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>Voice Assistant application enables users to issue voice commands and receives responses.</li>
+              <li>Developed using Python, leveraging libraries like Speech Recognition and Pyttsx3.</li>
+              <li>Integrated various APIs to provide diverse functionalities such as fetching weather reports, sending emails, sharing jokes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Online Electronic Store<span> (Dec 2023)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>The Online Electronic Store items such as laptop, phones etc. for online purchase.</li>
+              <li>Developed using Flask for the backend, ReactJS for the frontend, and PostgresSQL for the database.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div> -->
+
+    </div>
+
+  </section>
+  <!-- experience section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Sakshi's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
+          🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+1 XXX-XXX-XXXX</p>
+        <p> <i class="fas fa-envelope"></i>sakshigkp97@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>North Bergen, NJ, USA-07047</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer section ends -->
+
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
 
 </body>
 
