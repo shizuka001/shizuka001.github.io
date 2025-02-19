@@ -19,7 +19,9 @@
   <title>Portfolio | Sakshi Singh</title>
 </head>
 
-  <body oncontextmenu="return false">
+<!-- <body oncontextmenu="return false"> -->
+
+<body>
 
   <!-- pre loader -->
   <!-- <div class="loader-container">
@@ -27,9 +29,12 @@
 </div> -->
 
   <!-- navbar starts -->
-  <header>
-    <a href="/" class="logo"><i class="fab fa-node-js"></i> Sakshi Singh</a>
 
+  <i class="fa-solid fa-code"></i>
+  <header>
+    <!-- <img src="./assets/images/skills/code-solid.svg" /> -->
+    <!-- <a href="/" class="logo"><i class="fab fa-node-js"></i> Sakshi Singh</a> -->
+    <a href="/" class="logo"><img src="./assets/images/skills/laptop-code-solid.svg" /> Sakshi Singh</a>
     <div id="menu" class="fas fa-bars"></div>
     <nav class="navbar">
       <ul>
@@ -57,20 +62,19 @@
       </a>
       <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/sakshi-singhh97/"
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/s-sakshi23/"
               target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="github" aria-label="GitHub" href="https://github.com/shizuka001" target="_blank"><i
+          <li><a class="github" aria-label="GitHub" href="https://github.com/SakshiSingh-pace" target="_blank"><i
                 class="fab fa-github"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/itzz_sakshi_singh/"><i
-                class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="instagram" target="_blank" aria-label="Instagram"
+              href="https://www.instagram.com/itzz_sakshi_singh/"><i class="fab fa-instagram" target="_blank"></i></a>
+          </li>
         </ul>
       </div>
     </div>
+
     <div class="image">
-      <img draggable="false" class="tilt" src="./assets/images/blueBG.jpeg" alt="">
-    </div>
-    <div class="image image-small">
-      <img draggable="false" class="tilt" src="./assets/images/yellowBG.jpeg" alt="">
+      <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
     </div>
   </section>
   <!-- hero section ends -->
@@ -82,17 +86,17 @@
 
     <div class="row">
 
-      <div class="image">
+      <!-- <div class="image">
         <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
-      </div>
+      </div> -->
       <div class="content">
         <h3>I'm Sakshi</h3>
-        <span class="tag">Front End Developer</span>
+        <span class="tag">Front-End Web Developer</span>
 
         <p>I am a prospective Web Developer pursuing a Master's in Computer Science at Pace University, specializing in
           Front-End
-          Development, where I have demonstrated proficiency and a keen eye for creating engaging user interfaces.
-          During my tenure I collaborated effectively with cross-functional teams to deliver projects on time and
+          Development, where I have demonstrated proficiency and a keen eye for creating engaging user interfaces.</p>
+        <p>During my tenure I collaborated effectively with cross-functional teams to deliver projects on time and
           contributed to enhancing user experience through logical optimizations and aesthetic enhancements. I am fast
           learner and ready to span my horizon in tech industry.</p>
 
@@ -102,18 +106,18 @@
               <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
             </div> -->
           <div class="box">
-            <p><span> email : </span> sakshigkp97@@gmail.com</p>
+            <p><span> email : </span> <a href="mailto:ssakshisinghh97@gmail.com"> ssakshisinghh97@gmail.com</a></p>
             <p><span> place : </span> North Bergen, New Jersey, USA - 07047</p>
           </div>
         </div>
 
         <div class="resumebtn">
-          <a href="https://drive.google.com/file/d/1kVkXcfMwow-yGLijGTXKofOXtLvC0soQ/view?usp=sharing" target="_blank"
+          <a href="./assets/SAKSHI SINGH FRONT END DEVELOPER.pdf" target="_blank"
             class="btn"><span>Resume</span>
             <i class="fas fa-chevron-right"></i>
           </a>
 
-          <a href="https://drive.google.com/file/d/130EuLSI4z4C4HuHlsRQSU2o6gk7O-Eux/view?usp=sharing" target="_blank"
+          <a href="./assets/Cover Letter.pdf" target="_blank"
             class="btn"><span>Cover Letter</span>
             <i class="fas fa-chevron-right"></i>
           </a>
@@ -129,6 +133,49 @@
   <section class="skills" id="skills">
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <h2>Software/Tools</h2>
+      <div class="row" id="skillsContainer">
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/angular.svg" />
+            <span>Angular</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/react.svg" />
+            <span>React</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/github.svg" />
+            <span>GitHub</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/jira.svg" />
+            <span>Jira</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/skills/database-solid.svg" />
+            <span>MySQL</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
 
     <div class="container">
       <h2>Programming Languages</h2>
@@ -172,61 +219,47 @@
       </div>
     </div>
 
-    <div class="container">
-      <h2>Databases</h2>
-      <div class="row" id="skillsContainer">
+    <div>
+      <div class="container">
+        <h2>Professional & Analytical Skills</h2>
+        <div class="row" id="skillsContainer">
 
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/database-solid.svg" />
-            <span>MySQL</span>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/images/skills/people-group-solid.svg" />
+              <span>Teamwork</span>
+            </div>
           </div>
-        </div>
 
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/database-solid.svg" />
-            <span>MongoDB</span>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/images/skills/bug-slash-solid.svg" />
+              <span>Testing</span>
+            </div>
           </div>
-        </div>
 
-
-      </div>
-    </div>
-
-    <div class="container">
-      <h2>Software/Tools</h2>
-      <div class="row" id="skillsContainer">
-
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/angular.svg" />
-            <span>Angular</span>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/images/skills/file-circle-question-solid.svg" />
+              <span>Problem Solving</span>
+            </div>
           </div>
-        </div>
 
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/react.svg" />
-            <span>React</span>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/images/skills/magnifying-glass-chart-solid.svg" />
+              <span>Data Analysis</span>
+            </div>
           </div>
-        </div>
 
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/github.svg" />
-            <span>GitHub</span>
+          <div class="bar">
+            <div class="info">
+              <img src="./assets/images/skills/hourglass-half-solid.svg" />
+              <span>Code Optimization</span>
+            </div>
           </div>
+
         </div>
-
-        <div class="bar">
-          <div class="info">
-            <img src="./assets/images/skills/jira.svg" />
-            <span>Jira</span>
-          </div>
-        </div>
-
-
       </div>
     </div>
   </section>
@@ -249,7 +282,7 @@
         <div class="content">
           <h3>Masters in Computer Science</h3>
           <p>Pace University | New York, USA</p>
-          <h4>2023 | Pursuing</h4>
+          <h4>2023 - 2024 | Completed</h4>
         </div>
       </div>
 
@@ -276,25 +309,8 @@
 
     <div class="box-container">
       <div class="box box1">
-        <div class="image py-3">
-          <img draggable="false" src="./assets/images/skills/Doceree.png" alt="">
-        </div>
-      </div>
-      <!-- <div class="box"> -->
-      <div class="box">
-
-        <div class="content">
-          <h3>Intern | Software Engineer</h3>
-          <h4>July 2021 - Oct 2021</h4>
-          <ul>
-            <li>Mastered the concepts of Angular framework and Angular Material library.</li>
-            <li>Developed the PDF Download feature, enabling users to generate downloadable reports containing graphs
-              and data
-              from advertisement analytics.</li>
-            <li>Improved reliability and performance by 20% in the application through fixing pre-existing bugs and code
-              refactoring,
-              resulting in enhanced stability, faster load times, and a smoother user experience.</li>
-          </ul>
+        <div class="image py-3" style="margin: 10px 0;">
+          <img draggable="false" src="./assets/images/morgan Stanley logo.png" alt="">
         </div>
       </div>
 
@@ -302,33 +318,55 @@
 
         <div class="content">
           <h3>Front-End Developer</h3>
-          <h4>Oct 2021 - Nov 2022</h4>
+          <h4>Mar 2024 - Current</h4>
           <ul>
-            <li>Utilized Agile development methodologies with Jira and GitHub, enabling iterative development cycles,
-              transparent task
-              tracking and efficient team collaboration, ensuring timely delivery of high-quality software products</li>
-            <li>Collaborated with backend developers for Restful API integration, UI/UX developers for design
-              implementation, and
-              coordinated with the design team and project manager to ensure seamless execution of the project.</li>
-            <li>Integrated WhatsApp campaign, enabling WhatsApp message composition, audience creating and analytics
-              tracking for
-              efficient communication strategies within the application.</li>
-            <li>Replaced Google Charts with HighCharts and revamped the publisher dashboard for improved data
-              visualization and user
-              interface coherence across the application.</li>
-            <li>Implemented the entire in-house management portal, emphasizing efficient data display and management, to
-              streamline
-              access and decision-making processes.</li>
+            <li>Optimized API performance, reducing response times by 40% with React.js Context API and efficient API
+              handling.
+            </li>
+            <li>Increased test coverage to 95% using Jest and Cypress, ensuring stability and minimizing defects.
+            </li>
+            <li>Integrated Bloomberg API with WebSockets for real-time market updates and seamless user experience.
+            </li>
+            <li>Developed interactive financial charts with D3.js and Highcharts for advanced data visualization.
+            </li>
+            <li>Automated CI/CD workflows with Jenkins and GitHub Actions, cutting deployment times by 40%.</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- <div class="viewall">
-  <a href="/projects" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div> -->
+    <div class="box-container">
+      <div class="box box1">
+        <div class="image py-3" style="margin: 10px 0;">
+          <img draggable="false" src="./assets/images/Cipla_logo.svg" alt="">
+        </div>
+      </div>
+
+      <div class="box">
+
+        <div class="content">
+          <h3>Front-End Developer</h3>
+          <h4>Jan 2020 - Nov 2022</h4>
+          <ul>
+            <li>Led the development of a responsive healthcare web application, improving patient engagement metrics by
+              40% through user-centric design.
+            </li>
+            <li>Optimized performance, reducing page load times by 30% using resource minification and efficient asset
+              management.
+            </li>
+            <li>Implemented real-time patient monitoring with WebSockets, enhancing data accuracy and timeliness for
+              healthcare providers.
+            </li>
+            <li>Developed modular, reusable Angular components with NgRx state management, improving maintainability and
+              performance.
+            </li>
+            <li>Integrated and secured payment gateways (PayPal, Stripe) for seamless transactions, ensuring PCI DSS
+              compliance and user trust.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
   </section>
   <!-- work project section ends -->
@@ -344,7 +382,8 @@
           </div>
           <div class="desc">
             <ul>
-              <li>This mobile app acts as a one-stop guide, simplifying complex government procedures into easy-to-follow steps.</li>
+              <li>This mobile app acts as a one-stop guide, simplifying complex government procedures into
+                easy-to-follow steps.</li>
               <li>Visual Studio Code's extensive library of extensions, plugins and mySQL is used at the backend. </li>
             </ul>
           </div>
@@ -358,7 +397,8 @@
           </div>
           <div class="desc">
             <ul>
-              <li>The Examination Portal facilitates online exams where teachers upload questions and students can take exams remotely.</li>
+              <li>The Examination Portal facilitates online exams where teachers upload questions and students can take
+                exams remotely.</li>
               <li>Developed using the ReactJS framework for the frontend and MySQL for the backend database.</li>
             </ul>
           </div>
@@ -372,9 +412,11 @@
           </div>
           <div class="desc">
             <ul>
-              <li>This course imparts comprehensive knowledge of the MERN stack, covering MongoDB, Express.js, React, and Node.js, enabling me to build full-stack web applications proficiently.
+              <li>This course imparts comprehensive knowledge of the MERN stack, covering MongoDB, Express.js, React,
+                and Node.js, enabling me to build full-stack web applications proficiently.
               </li>
-              <li>Alongside MERN, I also delve into Python programing language and database management using PostgreSQL.</li>
+              <li>Alongside MERN, I also delve into Python programing language and database management using PostgreSQL.
+              </li>
             </ul>
           </div>
         </div>
@@ -388,9 +430,11 @@
           <div class="desc">
             <ul>
               <li>
-                The application offers streamlined administrative tasks such as student enrollment, grade recording, and communication.
+                The application offers streamlined administrative tasks such as student enrollment, grade recording, and
+                communication.
               </li>
-              <li>: Developed with JavaScript, HTML, and CSS, the frontend, while MySQL and Python power the backend for robust data handling and processing.</li>
+              <li>: Developed with JavaScript, HTML, and CSS, the frontend, while MySQL and Python power the backend for
+                robust data handling and processing.</li>
             </ul>
           </div>
         </div>
@@ -405,7 +449,8 @@
             <ul>
               <li>Voice Assistant application enables users to issue voice commands and receives responses.</li>
               <li>Developed using Python, leveraging libraries like Speech Recognition and Pyttsx3.</li>
-              <li>Integrated various APIs to provide diverse functionalities such as fetching weather reports, sending emails, sharing jokes.</li>
+              <li>Integrated various APIs to provide diverse functionalities such as fetching weather reports, sending
+                emails, sharing jokes.</li>
             </ul>
           </div>
         </div>
@@ -419,18 +464,29 @@
           <div class="desc">
             <ul>
               <li>The Online Electronic Store items such as laptop, phones etc. for online purchase.</li>
-              <li>Developed using Flask for the backend, ReactJS for the frontend, and PostgresSQL for the database.</li>
+              <li>Developed using Flask for the backend, ReactJS for the frontend, and PostgresSQL for the database.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Online Job Portal (Hirehub)<span> (Dec 2024)</span></h2>
+          </div>
+          <div class="desc">
+            <ul>
+              <li>Developed an online job portal for job seekers and employers, integrating subscription and payment
+                features to
+                enhance user experience. </li>
+              <li>Created use case diagrams, object diagrams, class diagrams and sequence diagrams using UML. </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <div class="morebtn">
-    <a href="/experience" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div> -->
 
     </div>
 
@@ -502,7 +558,7 @@
       <div class="box">
         <h3>contact info</h3>
         <p> <i class="fas fa-phone"></i>+1 XXX-XXX-XXXX</p>
-        <p> <i class="fas fa-envelope"></i>sakshigkp97@gmail.com</p>
+        <p> <i class="fas fa-envelope"></i>ssakshisinghh97@gmail.com</p>
         <p> <i class="fas fa-map-marked-alt"></i>North Bergen, NJ, USA-07047</p>
       </div>
     </div>

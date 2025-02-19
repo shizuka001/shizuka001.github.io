@@ -92,8 +92,9 @@ header .logo {
   text-decoration: none;
   color: #0e2431;
 }
-header .logo i {
-  font-size: 2.2rem;
+header .logo img {
+  height: 30px;
+  vertical-align: middle;
 }
 header .logo:hover {
   color: #fc8c05;
@@ -214,8 +215,9 @@ header .navbar ul li a:hover {
 }
 .home .image img {
   width: 70%;
+  margin-top: 6rem;
   margin-left: 6rem;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -394,11 +396,12 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   padding: 4rem;
 }
-.about .row .image {
+/* .home .image {
   text-align: center;
   flex: 1 1 35rem;
+  cursor: pointer;
 }
-.about .row .image img {
+.home .image img {
   margin: 4rem;
   width: 30rem;
   height: auto;
@@ -406,11 +409,10 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
   transition: 0.3s;
-  cursor: pointer;
 }
-.about .row .image img:hover {
+.home .image img:hover {
   mix-blend-mode: normal;
-}
+} */
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
@@ -443,6 +445,15 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
+  color: #011aff;
+}
+
+.about .row .content .box-container .box p a {
+  color: black;
+  text-transform: none;
+}
+
+.about .row .content .box-container .box p a:hover{
   color: #011aff;
 }
 .resumebtn {
@@ -549,7 +560,7 @@ header .navbar ul li a:hover {
 }
 
 .skills .container .bar img {
-  height: 154px;
+  height: 140px;
 }
 
 /* .skills .container .bar .info i {
@@ -559,7 +570,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
-  margin-left: 0.5rem;
+  text-align: center;
   color: black;
 }
 .skills .container h2 {
