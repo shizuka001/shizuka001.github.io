@@ -329,6 +329,14 @@ header .navbar ul li a:hover {
 .social-icons a.instagram:hover {
   background-color: #ee00da;
 }
+
+.work-list li span{
+  font-weight: bold;
+}
+
+.work-list li {
+  margin-top: 7px;
+}
 /* social icons end */
 
 /* hero media queries starts*/
@@ -342,18 +350,18 @@ header .navbar ul li a:hover {
   .socials {
     margin-top: 8rem;
   }
-  .home .image img {
+  /* .home .image img {
     margin-top: -12rem;
-  }
+  } */
   .home .content p {
     font-size: 2.2rem;
   }
   .home .content p span {
     font-size: 2.2rem;
   }
-  .home .image {
+  /* .home .image {
     z-index: 0;
-  }
+  } */
   .home {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust as needed */
@@ -367,10 +375,10 @@ header .navbar ul li a:hover {
     font-size: 3rem;
     z-index: 1;
   }
-  .home .image {
+  /* .home .image {
     display: none;
-  }
-  .home .image-small {
+  } */
+  .home .image {
     display: block;
     margin: 1rem;
     position: absolute;
@@ -396,7 +404,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   padding: 4rem;
 }
-/* .home .image {
+/* /* .home .image {
   text-align: center;
   flex: 1 1 35rem;
   cursor: pointer;
@@ -409,7 +417,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
   transition: 0.3s;
-}
+} */
 .home .image img:hover {
   mix-blend-mode: normal;
 } */
@@ -434,6 +442,17 @@ header .navbar ul li a:hover {
   font-weight: 600;
   text-transform: none;
 }
+
+.about .row .content ul li {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  text-transform: none;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
 .about .row .content .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -786,7 +805,7 @@ header .navbar ul li a:hover {
 }
 .work .box-container .box .content ul {
   font-size: 1.5rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -794,6 +813,19 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: rgb(34, 109, 0);
   text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.work .box-container .box .content .exp {
+  margin-left: 5rem;
+}
+
+.work h5 {
+  font-size: 1.5rem;
+  color: rgb(115, 3, 167);
+  text-align: left;
   margin-bottom: 1rem;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
